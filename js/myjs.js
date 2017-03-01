@@ -1,7 +1,7 @@
 var celc = "metric";
 
 $(document).ready(function() {
-    $.getJSON("http://freegeoip.net/json/", function(data) {
+    $.getJSON("https://freegeoip.net/json/", function(data) {
     var country_code = data.country_code;
     var country = data.country_name;
     var ip = data.ip;
