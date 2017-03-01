@@ -1,7 +1,7 @@
 var celc = "metric";
 
 $(document).ready(function() {
-    $.getJSON("http://freegeoip.net/json/", function(data) {
+    $.getJSON("https://freegeoip.net/json/", function(data) {
     var country_code = data.country_code;
     var country = data.country_name;
     var ip = data.ip;
@@ -13,7 +13,7 @@ $(document).ready(function() {
         type: 'GET',
         dataType: 'json',
         url:
-        'http://api.openweathermap.org/data/2.5/weather?lat=' + latitude + '&lon=' + longitude + '&appid=d612f07552cb4a6b8dc9c46e057a36f7&units=' + celc,
+        'https://api.openweathermap.org/data/2.5/weather?lat=' + latitude + '&lon=' + longitude + '&appid=d612f07552cb4a6b8dc9c46e057a36f7&units=' + celc,
         success: function(data) {
             console.log(data);
             console.log(celc);
